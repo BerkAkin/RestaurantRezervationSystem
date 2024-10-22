@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using WebApi.Database;
 
 namespace WebApi.Application.RestaurantOperations.Commands.DeleteRestaurant
@@ -15,7 +16,7 @@ namespace WebApi.Application.RestaurantOperations.Commands.DeleteRestaurant
         }
         public void Handle()
         {
-            var restaurant = _context.Restaurants.FirstOrDefault(r => r.Id == Id);
+            var restaurant = _context.Restaurants.Include(r => r.Tables).FirstOrDefault(r => r.Id == Id);
             if (restaurant is null)
             {
                 throw new InvalidOperationException("Silinmek istenen restoran bulunamadı");
