@@ -1,4 +1,6 @@
 using AutoMapper;
+using WebApi.Application.RestaurantOperations.Commands.CreateRestaurant;
+using WebApi.Application.RestaurantOperations.Commands.UpdateRestaurant;
 using WebApi.Application.RestaurantOperations.Queries.GetRestaurant;
 using WebApi.Application.RestaurantOperations.Queries.GetRestaurantDetails;
 using WebApi.Entities;
@@ -20,6 +22,10 @@ namespace WebApi.Common
                     TableType = t.TableType
                 }
             )));
+
+            CreateMap<CreateRestaurantViewModel, Restaurant>();
+            CreateMap<UpdateRestaurantViewModel, Restaurant>();
+
         }
     }
 }
