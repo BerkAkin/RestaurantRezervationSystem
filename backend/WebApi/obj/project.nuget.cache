@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "128phwl2UG4=",
+  "dgSpecHash": "Dt9Hb5uHMCQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\berka\\Desktop\\RestaurantRezervationSystem\\backend\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\berka\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
-    "C:\\Users\\berka\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\berka\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\berka\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\berka\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",
@@ -88,16 +87,5 @@
     "C:\\Users\\berka\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\berka\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Bağımlılık kısıtlaması dışında algılanan paket sürümü: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1, AutoMapper (= 12.0.1) gerektiriyor ancak sürüm AutoMapper 13.0.1 çözümlenmiş.",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

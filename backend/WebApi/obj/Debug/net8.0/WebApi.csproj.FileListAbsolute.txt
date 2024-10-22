@@ -6,7 +6,6 @@ C:\Users\berka\Desktop\RestaurantRezervationSystem\backend\WebApi\bin\Debug\net8
 C:\Users\berka\Desktop\RestaurantRezervationSystem\backend\WebApi\bin\Debug\net8.0\WebApi.dll
 C:\Users\berka\Desktop\RestaurantRezervationSystem\backend\WebApi\bin\Debug\net8.0\WebApi.pdb
 C:\Users\berka\Desktop\RestaurantRezervationSystem\backend\WebApi\bin\Debug\net8.0\AutoMapper.dll
-C:\Users\berka\Desktop\RestaurantRezervationSystem\backend\WebApi\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\berka\Desktop\RestaurantRezervationSystem\backend\WebApi\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\berka\Desktop\RestaurantRezervationSystem\backend\WebApi\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\berka\Desktop\RestaurantRezervationSystem\backend\WebApi\bin\Debug\net8.0\FluentValidation.dll
