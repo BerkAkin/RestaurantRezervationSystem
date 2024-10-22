@@ -25,7 +25,8 @@ public class DbSeeder
                 {
                     TableType = 1,
                     Capacity = 2,  // Küçük masa kapasitesi
-                    RestaurantId = restaurant.Id
+                    RestaurantId = restaurant.Id,
+                    IsAvailable = true
                 });
             }
 
@@ -36,7 +37,8 @@ public class DbSeeder
                 {
                     TableType = 2,
                     Capacity = 4,  // Büyük masa kapasitesi
-                    RestaurantId = restaurant.Id
+                    RestaurantId = restaurant.Id,
+                    IsAvailable = true
                 });
             }
 
