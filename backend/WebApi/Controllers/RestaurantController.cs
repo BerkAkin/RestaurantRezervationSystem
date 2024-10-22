@@ -1,5 +1,8 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using WebApi.Application.RestaurantOperations.Commands.CreateRestaurant;
+using WebApi.Application.RestaurantOperations.Commands.DeleteRestaurant;
+using WebApi.Application.RestaurantOperations.Commands.UpdateRestaurant;
 using WebApi.Application.RestaurantOperations.Queries.GetRestaurant;
 using WebApi.Application.RestaurantOperations.Queries.GetRestaurantDetails;
 using WebApi.Database;
@@ -37,6 +40,35 @@ namespace WebApi.Controllers
             var result = query.Handle();
             return Ok(result);
         }
+
+        [HttpPost]
+        public IActionResult createRestaurant([FromBody] CreateRestaurantViewModel model)
+        {
+            CreateRestaurantCommand command = new CreateRestaurantCommand(_context, _mapper);
+            command.Model = model;
+            command.Handle();
+            return Ok("Oluşturma başarılı");
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult deleteRestaurant(int id)
+        {
+            DeleteRestaurantCommand command = new DeleteRestaurantCommand(_context, _mapper);
+            command.Id = id;
+            command.Handle();
+            return Ok("Silme başarılı");
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult updateRestaurant(int id, UpdateRestaurantViewModel model)
+        {
+            UpdateRestaurantCommand command = new UpdateRestaurantCommand(_context, _mapper);
+            command.Id = id;
+            command.Model = model;
+            command.Handle();
+            return Ok("Güncelleme başarılı");
+        }
+
 
 
 
